@@ -65,7 +65,7 @@ export const api = {
       if (userId === "all-users") {
         return data.map((place: any) => ({
           ...place,
-          userName: place.userId?.name || 'Usuario Desconocido',
+          userName: place.userId?.name || 'Unknown User',
           userAvatar: place.userId?.avatar || 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=100',
         }));
       }
